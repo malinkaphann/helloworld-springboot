@@ -7,7 +7,7 @@ import malinka.web.model.MessageModel;
 @Service
 public class MessageService {
 
-	MessageModel getMessageModel() {
+	public MessageModel getMessageModel() {
 		
 		MessageModel model = new MessageModel("Hello World!");
 		
