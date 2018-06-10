@@ -24,7 +24,7 @@ public class MessageService {
 	 * @return message model
 	 * @throws IllegalArgumentException
 	 */
-	public MessageModel getMesageModel(String name) throws IllegalArgumentException {
+	public MessageModel getMessageModel(String name) throws IllegalArgumentException {
 		
 		if(name == null || name.isEmpty()) throw new IllegalArgumentException("input name is invalid");
 		

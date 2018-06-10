@@ -35,7 +35,7 @@ public class MessageServiceTest {
 		
 		try {
 			
-			msgService.getMesageModel(name);
+			msgService.getMessageModel(name);
 			
 			fail("expected illegal argument exception, but it never came through");
 			
@@ -51,7 +51,7 @@ public class MessageServiceTest {
 		
 		try {
 			
-			msgService.getMesageModel(name);
+			msgService.getMessageModel(name);
 			
 			fail("expected illegal argument exception, but it never came through");
 			
@@ -64,7 +64,7 @@ public class MessageServiceTest {
 	@Test
 	public void testHelloName() {
 		
-		MessageModel model = msgService.getMesageModel("Malinka");
+		MessageModel model = msgService.getMessageModel("Malinka");
 		
 		assertEquals("Hello Malinka", model.getMessage());
 		

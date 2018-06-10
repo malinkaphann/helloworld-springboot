@@ -24,6 +24,13 @@ public class HelloControllerTest {
 		.andExpect(status().isOk())
 		.andExpect(model().attribute("message", "Hello World!"));
 	}
+	
+	@Test
+	public void testHelloName() throws Exception {
+		this.mvc.perform(get("/hello/malinka"))
+		.andExpect(status().isOk())
+		.andExpect(model().attribute("message", "Hello malinka"));
+	}
 
 }
 
